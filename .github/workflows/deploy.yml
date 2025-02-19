@@ -3,14 +3,14 @@ name: Android Build
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Use Windows if needed, e.g., 'windows-latest'
 
     steps:
       - name: Checkout repository
@@ -19,18 +19,27 @@ jobs:
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:
-          distribution: 'adopt'
+          distribution: 'temurin'
           java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      - name: Verify Python installation
+        run: python --version
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v2
 
-      - name: Create local.properties
+      - name: Create local properties file
         run: |
-          echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
+          echo "sdk.dir=$ANDROID_HOME" > local.properties
+          echo "buildPython=$(which python)" >> local.properties
 
       - name: Grant execute permission for Gradle
         run: chmod +x gradlew
 
       - name: Build with Gradle
-        run: ./gradlew assembleDebug appDistributionUploadDebug
+        run: ./gradlew assembleDebug appDistributionUploadDebug --stacktrace
