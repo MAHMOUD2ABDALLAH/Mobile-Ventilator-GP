@@ -1,3 +1,5 @@
+<img width="150" height="150" align="right" alt="Mobile Ventilator" src="https://github.com/user-attachments/assets/fe0430d6-5dcd-4c1c-aba5-286a7a22137d" />
+
 # Mobile Ventilator GP
 
 Welcome to the **Mobile Ventilator GP** project repository. This project focuses on developing a portable and efficient mobile ventilator system designed to assist patients with respiratory difficulties, especially in scenarios where traditional ventilators are unavailable or impractical. This project is developed under the **Faculty of Computer and Information Science at Ain Shams University** in the field of **Bioinformatics** and holds copyrights from the faculty.
