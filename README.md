@@ -128,9 +128,11 @@ This project is licensed under the **Faculty of Computer and Information Science
 
 For questions, feedback, or collaboration opportunities, please contact:
 
-- **Mahmoud Abdallah**: [Mahmoud_abdallah20@outlook.com](mailto:Mahmoud_abdallah20@outlook.com)
+- **Mahmoud Abdallah**: [Mahmoud2018170805@cis.asu.edu.eg.com](mailto:Mahmoud2018170805@cis.asu.edu.eg.com)
 - **GitHub Issues**: Open an issue in the repository for technical inquiries.
 
 ---
+<img width="200" height="200" alt="ic_launcher-playstore" src="https://github.com/user-attachments/assets/1b5cd5a0-0782-4e1d-9283-2da3451f1359" />
 
-Thank you for your interest in the **Mobile Ventilator GP** project. We hope this system can make a meaningful impact in providing respiratory support to those in need.
+Thank you for your interest in the **Mobile Ventilator GP** project. 
+We hope this system can make a meaningful impact in providing respiratory support to those in need.
